@@ -35,18 +35,43 @@
         <circle class="button" cx="0" cy="10" r="5" />
       </svg>
       
-      <svg width="200" height="200" viewBox="-100 -100 200 200" style="border: 1px dashed #444;">
-        <line class="limb" x1="-40" y1="-10" x2="40" y2="-10" />
-        <line class="limb" x1="-25" y1="50" x2="0" y2="-15" />
-        <line class="limb" x1="25" y1="50" x2="0" y2="-15" />
+      <svg class="house" width="200" height="200" viewBox="-100 -100 200 200" style="border: 1px dashed #444;">
+        <polygon class="wall" points="-65,80 -65,-10 0,-70 65,-10 65,80" />
+        <polyline class="roof" points="-75,-8 0,-78 75,-8" />
+
+        <rect class="door" x="-45" y="10" width="30" height="60" rx="2" />
+        <circle class="door-knob" cx="-35" cy="40" r="2" />
+        <rect class="stair" x="-47" y="70" width="34" height="5" />
+        <rect class="stair" x="-49" y="75" width="38" height="5" />
+
+        <rect class="window" x="5" y="15" width="40" height="35" rx="5" />
+        <line x1="5" y1="32.5" x2="45" y2="32.5" />
+        <line x1="25" y1="15" x2="25" y2="50" />
+        <rect class="window-sill" x="2" y="48" width="46" height="5" rx="5" />
+
+        <circle class="window" cx="0" cy="-25" r="15" />
+        <line x1="-15" y1="-25" x2="15" y2="-25" />
+        <line x1="0" y1="-40" x2="0" y2="-10" />
       </svg>
 
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
-      <p>5</p>
-      <p>6</p>
-      <p>7</p>
+      <svg width="200" height="200" viewBox="-100 -100 200 200" style="border: 1px dashed #444;">
+        <defs>
+          <clipPath id="ball">
+            <circle cx="0" cy="20" r="70" />
+          </clipPath>
+        </defs>
+        <circle cx="0" cy="20" r="70" fill="#d1495b" />
+        <rect x="-17.5" y="-65" width="35" height="20" fill="#f79257" />
+        <circle cx="0" cy="-75" r="12" fill="none" stroke="#f79257" stroke-width="2" />
+
+        <polyline
+          clip-path="url(#ball)"
+          points="-120,40 -80,0 -40,40 0,0 40,40 80,0 120,40"
+          fill="none"
+          stroke="#9c2d2a"
+          stroke-width="20"
+        />
+      </svg>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
