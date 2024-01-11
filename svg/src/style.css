@@ -56,3 +56,13 @@ main {
   fill: #d1495b;
   stroke-linecap: round;
 }
+
+.icons_container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+.border {
+  border: 1px dashed #444;
+}

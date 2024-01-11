@@ -15,7 +15,7 @@
         <circle cx="0" cy="-75" r="12" fill="none" stroke="#f79257" stroke-width="2" />
       </svg>
       
-      <svg width="200" height="400" viewBox="-100 -200 200 400" style="border: 1px dashed #444;">
+      <svg width="200" height="200" viewBox="-100 -200 200 400" style="border: 1px dashed #444;">
         <polygon points="0,0 80,120 -80,120" fill="#234236" />
         <polygon points="0,-40 60,60 -60,60" fill="#0c5c4c" />
         <polygon points="0,-80 40,0 -40,0" fill="#38755b" />
@@ -71,6 +71,115 @@
           stroke="#9c2d2a"
           stroke-width="20"
         />
+      </svg>
+
+      <div class="icons_container border">
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-40,-40 L40,-40 M-40,0 L40,0 M-40,40 L40,40"
+            stroke="#333"
+            stroke-width="25"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-30,-20 L0,10 L30,-20"
+            stroke="#dd2233"
+            fill="none"
+            stroke-width="80"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-30,-20 L0,10 L30,-20"
+            stroke="black"
+            fill="none"
+            stroke-width="10"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-70,0 L70,0 L30,-50"
+            stroke="black"
+            fill="none"
+            stroke-width="25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-70,0 L70,0 L30,-50 M70,0 L30,50"
+            stroke="#d1495b"
+            fill="none"
+            stroke-width="25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg width="60" height="60" viewBox="-100 -100 200 200">
+          <path
+            d="M-30,-50 L-70,0 L-30,50 M-70,0 L70,0 M30,-50 L70,0 L30,50"
+            stroke="#21aa1b"
+            fill="none"
+            stroke-width="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <svg width="200" height="200" viewBox="-100 -100 200 200" class="border">
+        <g transform="translate(0 5)">
+          <g>
+            <polygon points="0,0 36,-50 0,-100" fill="#edd8b7" />
+            <polygon points="0,0 -36,-50 0,-100" fill="#e5c39c" />
+          </g>
+          <g transform="rotate(72)">
+            <polygon points="0,0 36,-50 0,-100" fill="#edd8b7" />
+            <polygon points="0,0 -36,-50 0,-100" fill="#e5c39c" />
+          </g>
+          <g transform="rotate(-72)">
+            <polygon points="0,0 36,-50 0,-100" fill="#edd8b7" />
+            <polygon points="0,0 -36,-50 0,-100" fill="#e5c39c" />
+          </g>
+          <g transform="rotate(144)">
+            <polygon points="0,0 36,-50 0,-100" fill="#edd8b7" />
+            <polygon points="0,0 -36,-50 0,-100" fill="#e5c39c" />
+          </g>
+          <g transform="rotate(-144)">
+            <polygon points="0,0 36,-50 0,-100" fill="#edd8b7" />
+            <polygon points="0,0 -36,-50 0,-100" fill="#e5c39c" />
+          </g>
+        </g>
+      </svg>
+
+      <svg width="200" height="200" viewBox="-100 -100 200 200" class="border">
+        <defs>
+          <path
+            id="branch"
+            d="
+              M0,0 L0,-90
+              M0,-20 L20,-34
+              M0,-20 L-20,-34
+              M0,-40 L20,-54
+              M0,-40 L-20,-54
+              M0,-60 L20,-74
+              M0,-60 L-20,-74
+            "
+            stroke="#e5c39c"
+            stroke-width="5"
+          />
+        </defs>
+        <use href="#branch" />
+        <use href="#branch" transform="rotate(60)" />
+        <use href="#branch" transform="rotate(120)" />
+        <use href="#branch" transform="rotate(180)" />
+        <use href="#branch" transform="rotate(240)" />
+        <use href="#branch" transform="rotate(300)" />
       </svg>
     </main>
     <script type="module" src="/src/main.ts"></script>
