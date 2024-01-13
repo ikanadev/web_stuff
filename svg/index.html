@@ -272,6 +272,22 @@
         <path class="ribbon" d="M0,-60 L-30,-60 C-50,-60 -50,-80 -30,-75 L0,-60" />
       </svg>
 
+      <svg width="200" height="200" viewBox="-100 -100 200 200" class="border">
+        <defs>
+          <radialGradient id="bell" cx="0.65" cy="0.25" r="0.35">
+            <stop offset="0%" stop-color="#ffffd8" />
+            <stop offset="100%" stop-color="#cdba66" />
+          </radialGradient>
+        </defs>
+        <circle cx="0" cy="-45" r="7" fill="#4f6d7a" />
+        <circle cx="0" cy="50" r="10" fill="#f79257" />
+        <path
+          d="M-50,40 L-50,50 L50,50 L50,40 Q40,40 40,10 C40,-60 -40,-60 -40,10 Q-40,40 -50 40"
+          fill="url(#bell)"
+          stroke-width="2"
+          stroke="black"
+        />
+      </svg>
 
     </main>
     <script type="module" src="/src/main.ts"></script>
