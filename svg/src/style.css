@@ -82,3 +82,12 @@ main {
   stroke-width: 4px;
   fill: none;
 }
+
+.red-mark {
+  stroke: #d1495b;
+  stroke-width: 2.5px;
+}
+.green-mark {
+  stroke: #234236;
+  stroke-width: 2.5px;
+}
