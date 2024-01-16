@@ -413,6 +413,61 @@
 
       <div class="background border"></div>
 
+      <svg width="200" height="200" viewBox="-100 -100 200 200" class="border">
+        <rect x="-100" y="-100" width="200" height="200" fill="#cd803d" />
+        <circle r="55" cx="0" cy="0" stroke="#fcce7b" stroke-width="10" fill="white" />
+        <circle
+          cx="0" cy="0" r="45"
+          stroke="#b6705f" stroke-width="6"
+          stroke-dasharray="6 17.561944"
+          stroke-dashoffset="3"
+          fill="none"
+        />
+        <g stroke="#5f4c6c" stroke-linecap="round">
+          <line id="hours" y2="-20" stroke-width="6" />
+          <line id="minutes" y2="-35" stroke-width="4" />
+          <line id="seconds" y2="-38" stroke-width="1" />
+        </g>
+        <circle r="1" cx="0" cy="0" fill="white" />
+      </svg>
+
+      <svg class="lights border" width="400" height="200" viewBox="-200 -100 400 200">
+        <script>
+          window.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("button");
+            let lightsOn = false;
+
+            button.addEventListener("click", () => {
+              const bulbs = document.querySelectorAll(".b");
+              bulbs[0].setAttribute("fill", lightsOn ? "white" : "#FFC05B");
+              bulbs[1].setAttribute("fill", lightsOn ? "white" : "#F86285");
+              bulbs[2].setAttribute("fill", lightsOn ? "white" : "#03A8A8");
+              bulbs[3].setAttribute("fill", lightsOn ? "white" : "#748CEF");
+              
+              lightsOn = !lightsOn;
+            });
+          });
+        </script>
+
+        <defs>
+          <g id="bulb">
+            <path d="M 0,0 Q 20 25 0 40 Q -20 25 0 0" />
+            <rect x="-6" y="-1" width="12" height="10" rx="3" fill="#5F4C6C" />
+          </g>
+        </defs>
+
+        <path d="M -140 -60 Q -70 -50 0 -60 Q 110 -70 110 10" />
+        <line x1="-70" y1="-15" x2="-70" y2="-55" />
+        <line x1="30" y1="-25" x2="30" y2="-60" />
+        <use class="b" href="#bulb" x="-120" y="-45" transform="rotate(5)" />
+        <use class="b" href="#bulb" x="-70" y="-15" />
+        <use class="b" href="#bulb" x="-20" y="-57" transform="rotate(-5)" />
+        <use class="b" href="#bulb" x="30" y="-25" />
+
+        <rect x="90" y="10" width="40" height="40" fill="lightgray" />
+        <circle id="button" cx="110" cy="30" r="15" fill="red" />
+      </svg>
+
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
