@@ -109,3 +109,69 @@ main {
   stroke-width: 2;
 }
 
+.sleigh {
+  offset-path: path("M -200 80 L -90 80 Q 60 80 60 -10 A 50 50 0 0 0 -60 -10 Q -60 80 90 80 L 200 80");
+  animation: roller_coaster 6s infinite linear;
+}
+
+@keyframes roller_coaster {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.bell:hover {
+  transform-origin: center 30%;
+}
+
+.bell:hover, .bell:hover .bell-tongue {
+  animation-duration: 0.5s;
+  animation-delay: -0.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: ring;
+}
+@keyframes ring {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+.flake {
+  animation-duration: inherit;
+  animation-name: snowing;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes snowing {
+  from {
+    transform: translate(0, -100px);
+  }
+  to {
+    transform: translate(0, 100px);
+  }
+}
+.flake.opaque {
+  opacity: 0.7;
+}
+.flake.slow {
+  animation-duration: 5s;
+}
+.flake.fast {
+  animation-duration: 3s;
+}
+
+.background {
+  width: 200px;
+  height: 200px;
+  background-color: #38755b;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 120 120'><polyline fill='none' stroke='%230c5c4c' stroke-width='42.4' points='-30 0 60 90 150 0' /></svg>");
+}
